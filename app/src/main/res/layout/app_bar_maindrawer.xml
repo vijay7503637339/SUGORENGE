@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maindrawer">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+             android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/fourtydp"
+                    android:layout_height="@dimen/fiftydep"
+                    android:src="@drawable/home"
+
+                    />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gupta business mall"
+                    android:textAllCaps="true"
+                      android:textStyle="bold"
+                    android:visibility="gone"
+
+                    android:src="@drawable/sugorangelogo"
+
+                    android:layout_centerInParent="true"
+
+                   />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/arialround"
+                    android:gravity="center"
+                    android:src="@drawable/logo"
+                    android:text="Sugo Range"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentyfive" />
+
+
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+
+                    android:src="@drawable/turnoff"
+                    android:onClick="logout"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/twentydp"
+
+                    />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_maindrawer" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

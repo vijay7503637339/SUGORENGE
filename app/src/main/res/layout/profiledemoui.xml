@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+     android:background="#fff">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout"
+                android:background="@drawable/profile_bk">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageprofile"
+                    android:src="@drawable/userimage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. Vijay Gupta"
+                    android:textSize="16dp"
+                    android:id="@+id/textnamw"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="developer@VijayFNBitserve.com"
+                    android:textSize="12dp"
+                    android:id="@+id/emailtext"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/profileBackground">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/profile_bk" />
+
+                    <TextView
+                        android:text="Back to Home"
+                        android:textSize="12sp"
+                        android:onClick="home"
+                        android:id="@+id/home"
+                        style="@style/profileStyledBackButton" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+    <include layout="@layout/contentprofile" />
+
+
+</LinearLayout>

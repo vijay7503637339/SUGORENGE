@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ContactPage">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+          android:src="@drawable/logo"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        android:elevation="15dp"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bitterbold"
+                android:text="You can contact our Toll Free number"
+                android:layout_marginTop="@dimen/fiftydep"
+
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="@dimen/sixteensp" />
+
+
+            <Button
+                android:id="@+id/login2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonback2"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="@dimen/ten"
+                android:paddingRight="10dp"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="@dimen/fivedp"
+                android:text="1800 103 2706"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonback2"
+                android:paddingLeft="10dp"
+
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/ten"
+                android:paddingRight="10dp"
+                android:drawableLeft="@drawable/mailvector"
+                android:drawablePadding="@dimen/fivedp"
+                android:text="Admin@bgkrishnan.com"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

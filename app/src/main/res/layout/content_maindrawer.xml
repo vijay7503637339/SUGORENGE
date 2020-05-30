@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        android:layout_above="@+id/bottom_navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navigation"
+        android:padding="@dimen/sevendp"
+        android:background="@color/white"
+        android:layout_height="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="searchh"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/thirtydp"
+                android:padding="@dimen/fivedp"
+                android:src="@drawable/zoom"
+                android:layout_height="@dimen/thirtydp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Search"
+                android:gravity="center"
+                android:textSize="12sp"
+
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="bookings"
+             android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/thirtydp"
+                android:padding="@dimen/fivedp"
+                android:src="@drawable/bookings"
+                android:layout_height="@dimen/thirtydp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="My Bookings"
+                android:gravity="center"
+                android:textSize="@dimen/hometext"
+                android:textColor="@color/TextColor"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="category"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/thirtydp"
+                android:padding="2dp"
+                android:src="@drawable/category"
+                android:layout_height="@dimen/thirtydp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Category"
+                android:textSize="@dimen/hometext"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="@color/TextColor"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/movie_tab"
+            android:onClick="profile"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/thirtydp"
+                android:layout_height="26dp"
+                android:padding="5dp"
+                android:src="@drawable/user" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Profile"
+                android:textSize="@dimen/hometext"
+                android:gravity="center"
+                android:textColor="@color/TextColor"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

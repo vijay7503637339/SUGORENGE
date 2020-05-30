@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:id="@+id/mainlayout"
+    android:layout_height="match_parent"
+    tools:context=".ThanksVendor">
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bitterbold"
+        android:text="Successfully  Regitster "
+        android:id="@+id/bottomtext"
+        android:layout_marginTop="@dimen/twentydp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twentysp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/myriadbold"
+        android:text="As a ServiceHAT Partner"
+        android:layout_marginTop="@dimen/ten"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+
+        android:id="@+id/hedtext"
+        android:textColor="@color/black"
+
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fivedp"
+        android:layout_gravity="end"
+         android:background="@color/colorPrimaryDark"
+
+
+        android:layout_marginTop="@dimen/ten"
+
+        android:text="  Under Verification"
+        android:textStyle="bold"
+         android:textColor="@color/white"
+        android:textSize="@dimen/_14sp" />
+
+
+    <ImageView
+        android:id="@+id/foimage"
+        android:layout_width="match_parent"
+        android:src="@drawable/congratulation"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bitterbold"
+        android:text="You Need to pay ₹6000 to Become Verified Partner"
+        android:layout_marginTop="@dimen/ten"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="@dimen/sixteensp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/myriadbold"
+        android:text="Any query Please Call:"
+
+        android:textAlignment="center"
+
+        android:layout_marginTop="@dimen/twentydp"
+
+        android:textColor="@color/black"
+
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+
+        android:background="@drawable/buttonback2"
+
+
+        android:paddingLeft="10dp"
+        android:layout_marginTop="@dimen/ten"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="@dimen/fivedp"
+        android:text="+91-8802470198"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/myriadbold"
+        android:text="OR"
+
+        android:textAlignment="center"
+
+           android:layout_marginTop="@dimen/fivedp"
+
+        android:textColor="@color/black"
+
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/makepayment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+
+        android:layout_gravity="center"
+
+        android:background="@drawable/buttonback2"
+
+
+        android:paddingLeft="10dp"
+        android:layout_marginTop="@dimen/fivedp"
+        android:paddingRight="10dp"
+         android:drawablePadding="@dimen/fivedp"
+        android:text="Make Payment"
+          android:textColor="@color/white"
+        />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

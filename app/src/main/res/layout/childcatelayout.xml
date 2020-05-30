@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+
+     android:orientation="vertical"
+     android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtydp"
+            android:layout_weight="0.3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/twentydp"
+                    android:fontFamily="@font/bitterregular"
+                    android:id="@+id/text"
+                    android:text="Split AC"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelevesp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twentydp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:id="@+id/prize"
+                    android:fontFamily="@font/bitterbold"
+                    android:text="Rs.500"
+                    android:textSize="@dimen/tensp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center">
+
+
+
+                    <Button
+                        android:id="@+id/addpro"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/buttonback2"
+                        android:text="Book Now"
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/eightsp" />
+
+ 
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+</LinearLayout>

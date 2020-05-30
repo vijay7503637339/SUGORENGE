@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sugorenge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fav"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/fav"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ContactPage"></activity>
+        <activity android:name=".Category" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".contentprofile" />
+        <activity android:name=".PaymentSuccessFailer" />
+        <activity android:name=".VendorDashBoard" />
+        <activity android:name=".ThanksVendor" />
+        <activity android:name=".MyBookings" />
+        <activity android:name=".PaymentWebview" />
+        <activity android:name=".BookingConfirmation" />
+        <activity android:name=".Searchservices" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Childcategory" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Sub_Staff_Category" />
+        <activity android:name=".Staff" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".FacilityManagement" />
+        <activity android:name=".Patientcare" />
+        <activity android:name=".OTPscreen" />
+        <activity
+            android:name=".Maindrawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

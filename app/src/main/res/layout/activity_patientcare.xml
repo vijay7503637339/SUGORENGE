@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Patientcare">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:onClick="back"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/myriadbold"
+                    android:text="Patient Care"
+                    android:layout_centerInParent="true"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/twohundreddp"
+                android:src="@drawable/patient"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Care"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bitterbold"
+                android:textSize="@dimen/twentysp"
+                android:textColor="@color/black"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="@dimen/tendp"
+                app:cardElevation="5dp"
+                android:layout_margin="@dimen/thirtydp"
+                android:layout_height="450dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.2"
+                            android:layout_height="@dimen/sixtydp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nursing"
+                                android:textSize="@dimen/twelevesp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:fontFamily="@font/bitterregular"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sixtydp"
+                            android:layout_weight="0.8"
+                            >
+
+                            <ImageView
+                                android:layout_width="@dimen/twentydp"
+                                android:layout_height="@dimen/twentydp"
+                                android:text="AC Service"
+                                android:textSize="@dimen/twentysp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:src="@drawable/rightarrow"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:fontFamily="@font/bitterregular"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.2"
+                            android:layout_height="@dimen/sixtydp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:fontFamily="@font/bitterregular"
+                                android:text="Hospital"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/twelevesp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sixtydp"
+                            android:layout_weight="0.8"
+                            >
+
+                            <ImageView
+                                android:layout_width="@dimen/twentydp"
+                                android:layout_height="@dimen/twentydp"
+                                android:text="AC Service"
+                                android:textSize="@dimen/twentysp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:src="@drawable/rightarrow"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:fontFamily="@font/bitterregular"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.2"
+                            android:layout_height="@dimen/sixtydp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Labs"
+                                android:textSize="@dimen/twelevesp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:fontFamily="@font/bitterregular"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sixtydp"
+                            android:layout_weight="0.8"
+                            >
+
+                            <ImageView
+                                android:layout_width="@dimen/twentydp"
+                                android:layout_height="@dimen/twentydp"
+                                android:text="AC Service"
+                                android:textSize="@dimen/twentysp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:src="@drawable/rightarrow"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:fontFamily="@font/bitterregular"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.2"
+                            android:layout_height="@dimen/sixtydp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:fontFamily="@font/bitterregular"
+                                android:text="Care Staff"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/twelevesp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sixtydp"
+                            android:layout_weight="0.8"
+                            >
+
+                            <ImageView
+                                android:layout_width="@dimen/twentydp"
+                                android:layout_height="@dimen/twentydp"
+                                android:text="AC Service"
+                                android:textSize="@dimen/twentysp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:src="@drawable/rightarrow"
+                                android:layout_marginLeft="@dimen/twentydp"
+                                android:fontFamily="@font/bitterregular"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/patienmtimage2"
+                        android:scaleType="fitXY"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
